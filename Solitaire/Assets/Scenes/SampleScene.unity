@@ -620,7 +620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552725843}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a6a0358cf9f0614c969fb92a76f5808, type: 3}
   m_Name: 
@@ -806,6 +806,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9eb8e551828a054469687e19cdeb31d8, type: 3}
   - {fileID: 21300000, guid: 29c03145977a5f049b0ed6d32a2ef3be, type: 3}
   - {fileID: 21300000, guid: e72be58a4833c3b41bb377ff874fe0eb, type: 3}
+  cardPrefab: {fileID: 1130216728}
   deck: []
 --- !u!4 &552725846
 Transform:
@@ -1147,6 +1148,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1130216728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2275133672185007036, guid: af4668acd48b49144bf13ab1634f533a, type: 3}
+  m_PrefabInstance: {fileID: 2275133671063402148}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1130216732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130216728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c097f74b9778f8a4689657c0744d9706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
 --- !u!1 &1157208974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1460,14 @@ PrefabInstance:
     - target: {fileID: 2275133672185007036, guid: af4668acd48b49144bf13ab1634f533a, type: 3}
       propertyPath: m_Name
       value: card
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275133672185007037, guid: af4668acd48b49144bf13ab1634f533a, type: 3}
+      propertyPath: cardBack
+      value: 
+      objectReference: {fileID: 21300000, guid: fca15803ef2cea741876f68567c643c1, type: 3}
+    - target: {fileID: 2275133672185007037, guid: af4668acd48b49144bf13ab1634f533a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2275133672185007039, guid: af4668acd48b49144bf13ab1634f533a, type: 3}
       propertyPath: m_RootOrder
